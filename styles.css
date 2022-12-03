@@ -1,12 +1,126 @@
+@media screen and (min-width:834px) {
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    label span, input {
+        display: none;
+    }
+}
+
 html {
     background-color: #020659 ;
 }
 
+body {
+    width: 834px;
+    margin: 0 auto;
+    color: white;
+    background-color: white;
+}
+
+header {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+    background-color: darkblue;
+    padding: 10px;
+    padding-right: 5px;
+}
+
+header img {
+    margin-top: 15px;
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+
+nav {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    
+}
+
+nav li {
+    margin-right: 80px;
+    margin-top: 10px;
+    width: 80px;
+    height: auto;
+    list-style: none;
+    text-align: center;
+}
+
 ul {
     overflow: hidden;
-    max-height: 0;
+    display: flex;
     transition: max-height .2s ease-out;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#jazz {
+    background: hsla(208, 67%, 81%, 1);
+    background: linear-gradient(45deg, blue 0%, black 80%);
+    background: -moz-linear-gradient(45deg, blue 0%, black 80%);
+    background: -webkit-linear-gradient(45deg, blue 0%, black 80%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="blue", endColorstr="black", GradientType=1 );
+    padding: 10px;
+}
+
+#trending {
+    color: #590242;
+}
+
+h3 {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.scroll {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.scroll figure {
+    position: relative;
+    background-color: lightgrey;
+    height: 380px;
+    margin: 10px;
+}
+
+figure h4, figure p {
+    margin: 5px;
+}
+
+figure audio {
+    position: absolute;
+    bottom: 150px;
+    left: 5px;
+}
+
+#playlists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color:#590242;
+}
+
+.yourPlaylists .vScroll{
+    background-color: lightskyblue;
+}
+
+.vScroll {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
 label {
     cursor: pointer;
     display: inline-block;
@@ -57,49 +171,43 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 
 audio::-webkit-media-controls-mute-button {
-
+    background-color: white;
+    border-radius: 100px;
 }
 audio::-webkit-media-controls-play-button {
-
+    background-color: white;
+    border-radius: 100px;
 }
 audio::-webkit-media-controls-enclosure {
-
+    background-color: rgba(211, 211, 211, 0.687);
 }
 
 #trending ::-webkit-scrollbar {
-
+    width: 15px;
+    border-radius: 10px;
 }
 #trending ::-webkit-scrollbar-track {
-
+    box-shadow: inset 0 0 15px #590242
 }
 #trending ::-webkit-scrollbar-thumb {
-
+    background:#590242;
+    border-radius: 10px;
 }
 #trending ::-webkit-scrollbar-thumb:hover {
-
+    background:#020659
+    border-radius: 10px;
 }
 #playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
-
+    width: 15px;
+    border-radius: 10px;
 }
 #playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
-
+    box-shadow: inset 0 0 15px #020659;
 }
 #playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
-
+    background: #020659;
 }
 #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
-
+    background: white;
 }
 
-@media screen and (min-width:834px) {
-    ul {
-        overflow: visible;
-        position: absolute;
-        top: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-    label span, input {
-        display: none;
-    }
-}
