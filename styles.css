@@ -113,13 +113,45 @@ figure audio {
 
 .yourPlaylists .vScroll{
     background-color: lightskyblue;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.vScroll figure {
+    padding: 20px;
+    padding-right:5px;
+    background-color: rgb(72, 176, 241);
+    display: inline-flex;
+    color: white;
+}
+
+.curatedPlaylists .vScroll figure {
+    background-color: rgb(6, 6, 79);
+}
+
+.vScroll img {
+    height: 110%;
+    width: auto;
+}
+
+.vScroll p {
+    position: relative;
+}
+
+.curatedPlaylists .vScroll{
+    background-color: darkblue;
+    text-align: center;
+    padding-right: 15px;
 }
 
 .vScroll {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
-
+small {
+    color:#590242;
+    text-align: center;
+}
 
 label {
     cursor: pointer;
